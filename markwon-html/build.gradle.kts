@@ -25,3 +25,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     compileOnly(libs.commonmark.strikethrough)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-html"
+                version = "1.0.0"
+            }
+        }
+    }
+}

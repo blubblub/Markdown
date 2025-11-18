@@ -1,5 +1,4 @@
 plugins {
-    `maven-publish`
     id("java-library")
 }
 

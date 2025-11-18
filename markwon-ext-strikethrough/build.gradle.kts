@@ -24,3 +24,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     api(libs.commonmark.strikethrough)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-ext-strikethrough"
+                version = "1.0.0"
+            }
+        }
+    }
+}

@@ -23,3 +23,16 @@ dependencies {
     api(libs.glide)
     implementation(libs.androidx.core.ktx)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-image-glide"
+                version = "1.0.0"
+            }
+        }
+    }
+}

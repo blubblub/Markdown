@@ -32,3 +32,16 @@ dependencies {
     testImplementation(libs.robolectric)
     testImplementation(libs.mockito)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-ext-latex"
+                version = "1.0.0"
+            }
+        }
+    }
+}

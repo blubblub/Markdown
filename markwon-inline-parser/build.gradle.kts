@@ -26,3 +26,16 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.commonmark.test.util)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-inline-parser"
+                version = "1.0.0"
+            }
+        }
+    }
+}

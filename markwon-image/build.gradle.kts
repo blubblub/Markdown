@@ -28,3 +28,16 @@ dependencies {
     compileOnly(libs.okhttp)
 
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-image"
+                version = "1.0.0"
+            }
+        }
+    }
+}

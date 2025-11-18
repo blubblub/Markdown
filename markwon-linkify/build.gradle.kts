@@ -23,3 +23,16 @@ dependencies {
     api(projects.markwonCore)
     implementation(libs.androidx.core.ktx)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-linkify"
+                version = "1.0.0"
+            }
+        }
+    }
+}

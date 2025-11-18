@@ -21,5 +21,19 @@ android {
 dependencies {
     api(libs.annotations)
     api(libs.ixJava)
+    api(libs.junit)
     implementation(libs.androidx.core.ktx)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.blubblub"
+                artifactId = "markwon-test-span"
+                version = "1.0.0"
+            }
+        }
+    }
 }
