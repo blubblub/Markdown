@@ -10,7 +10,7 @@ kotlin = "2.0.0"
 coreKtx = "1.13.0"
 
 commonmark = "0.21.0"
-coil = "2.7.0"
+coil = "2.6.0"
 androidsvg = "1.4"
 okhttp = "4.12.0"
 glide = "4.16.0"
