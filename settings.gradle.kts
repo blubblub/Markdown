@@ -25,8 +25,8 @@ pluginManagement {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-include(":app-sample")
-include(":sample-utils:processor")
+// include(":app-sample")
+// include(":sample-utils:processor")
 
 
 include(":markwon-core")
