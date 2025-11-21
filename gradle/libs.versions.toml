@@ -3,15 +3,16 @@
 compile-sdk = "35"
 target-sdk = "34"
 min-sdk    = "23"
+junit = "4.13.2"
 
-agp = "8.10.1"
-kotlin = "2.2.0"
-coreKtx = "1.16.0"
+agp = "8.6.0"
+kotlin = "2.0.0"
+coreKtx = "1.13.0"
 
 commonmark = "0.21.0"
 coil = "2.7.0"
 androidsvg = "1.4"
-okhttp = "5.1.0"
+okhttp = "4.12.0"
 glide = "4.16.0"
 picasso = "2.71828"
 prism4j = "2.0.0"
@@ -29,10 +30,10 @@ kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", versi
 
 annotations       = { module = "androidx.annotation:annotation", version = "1.9.1" }
 recyclerView     = { module = "androidx.recyclerview:recyclerview", version = "1.4.0" }
-core              = { module = "androidx.core:core", version = "1.16.0" }
-appcompat         = { module = "androidx.appcompat:appcompat", version = "1.7.1" }
+core              = { module = "androidx.core:core", version = "1.13.0" }
+appcompat         = { module = "androidx.appcompat:appcompat", version = "1.7.0" }
 cardview          = { module = "androidx.cardview:cardview", version = "1.0.0" }
-fragment          = { module = "androidx.fragment:fragment", version = "1.8.8" }
+fragment          = { module = "androidx.fragment:fragment", version = "1.8.1" }
 
 commonmark          = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
 commonmark-strikethrough = { module = "org.commonmark:commonmark-ext-gfm-strikethrough", version.ref = "commonmark" }
@@ -58,6 +59,7 @@ coil                = { module = "io.coil-kt:coil", version.ref = "coil" }
 ixJava             = { module = "com.github.akarnokd:ixjava", version.ref = "ixjava" }
 gson                = { module = "com.google.code.gson:gson", version.ref = "gson" }
 commons-io          = { module = "commons-io:commons-io", version.ref = "commonsio" }
+junit = { module = "junit:junit", version.ref = "junit" }
 
 prism4j-bundler     = { module = "io.noties:prism4j-bundler", version.ref = "prism4j" }
 

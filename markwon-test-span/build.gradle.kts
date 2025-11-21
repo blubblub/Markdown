@@ -20,5 +20,6 @@ android {
 dependencies {
     api(libs.annotations)
     api(libs.ixJava)
+    api(libs.junit)
     implementation(libs.androidx.core.ktx)
 }
